@@ -24,7 +24,7 @@ Place 2 Sleep - Sistema para la Administración de Cementerios
 
 ## Requisitos y Despliegue
 
-- WSL | Linux
+- WSL
 - Docker
 
 ``` bash
