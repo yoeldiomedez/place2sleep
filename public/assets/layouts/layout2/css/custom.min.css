@@ -1,0 +1,8 @@
+textarea {
+    resize: vertical;
+    overflow: auto;
+}
+
+.btn-actions {
+    white-space: nowrap;
+}
