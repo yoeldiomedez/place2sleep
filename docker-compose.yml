@@ -27,7 +27,6 @@ services:
             - meilisearch
             - mailpit
             - selenium
-            - node
     mysql:
         image: 'mysql/mysql-server:8.0'
         ports:
@@ -97,12 +96,6 @@ services:
             - 'host.docker.internal:host-gateway'
         volumes:
             - '/dev/shm:/dev/shm'
-        networks:
-            - sail
-    node:
-        image: "node:18.15.0"
-        volumes:
-            - ./www:/var/www
         networks:
             - sail
 networks:

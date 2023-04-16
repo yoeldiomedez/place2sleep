@@ -28,12 +28,17 @@ Place 2 Sleep - Sistema para la Administración de Cementerios
 - Docker
 
 ``` bash
-# Installation
-  ./vendor/bin/sail up
-  ./vendor/bin/sail npm install
-  ./vendor/bin/sail npm run dev | prod
-  
-# Data Base Migration
-  php artisan migrate --seed | migrate:refesh --seed
+# Composer
+  docker run --rm \
+    -u "$(id -u):$(id -g)" \
+    -v "$(pwd):/var/www/html" \
+    -w /var/www/html \
+    laravelsail/php82-composer:latest \
+    composer install --ignore-platform-reqs
 
+# Sail
+  ./vendor/bin/sail up -d
+  ./vendor/bin/sail npm install
+  ./vendor/bin/sail npm run dev
+  ./vendor/bin/sail php artisan migrate --seed
 ```
