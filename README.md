@@ -22,12 +22,15 @@ Place 2 Sleep - Sistema para la Administración de Cementerios
 - [x] Familiares
 - [x] Cementerios
 
-## Requisitos y Despliegue
+## Despliegue
 
 - WSL
 - Docker
 
 ``` bash
+# Enviroment
+  cp .env.example .env
+
 # Composer
   docker run --rm \
     -u "$(id -u):$(id -g)" \
@@ -40,5 +43,6 @@ Place 2 Sleep - Sistema para la Administración de Cementerios
   ./vendor/bin/sail up -d
   ./vendor/bin/sail npm install
   ./vendor/bin/sail npm run dev
+  ./vendor/bin/sail php artisan key:generate
   ./vendor/bin/sail php artisan migrate --seed
 ```
