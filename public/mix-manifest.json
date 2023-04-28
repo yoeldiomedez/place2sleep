@@ -6,11 +6,6 @@
     "/css/main.css": "/css/main.css",
     "/js/main.js": "/js/main.js",
     "/fonts/FontAwesome.otf": "/fonts/FontAwesome.otf",
-    "/fonts/fontawesome-webfont.eot": "/fonts/fontawesome-webfont.eot",
-    "/fonts/fontawesome-webfont.svg": "/fonts/fontawesome-webfont.svg",
-    "/fonts/fontawesome-webfont.ttf": "/fonts/fontawesome-webfont.ttf",
-    "/fonts/fontawesome-webfont.woff": "/fonts/fontawesome-webfont.woff",
-    "/fonts/fontawesome-webfont.woff2": "/fonts/fontawesome-webfont.woff2",
     "/fonts/Simple-Line-Icons.dev.svg": "/fonts/Simple-Line-Icons.dev.svg",
     "/fonts/Simple-Line-Icons.eot": "/fonts/Simple-Line-Icons.eot",
     "/fonts/Simple-Line-Icons.svg": "/fonts/Simple-Line-Icons.svg",
@@ -20,5 +15,10 @@
     "/fonts/bootstrap/glyphicons-halflings-regular.svg": "/fonts/bootstrap/glyphicons-halflings-regular.svg",
     "/fonts/bootstrap/glyphicons-halflings-regular.ttf": "/fonts/bootstrap/glyphicons-halflings-regular.ttf",
     "/fonts/bootstrap/glyphicons-halflings-regular.woff": "/fonts/bootstrap/glyphicons-halflings-regular.woff",
-    "/fonts/bootstrap/glyphicons-halflings-regular.woff2": "/fonts/bootstrap/glyphicons-halflings-regular.woff2"
+    "/fonts/bootstrap/glyphicons-halflings-regular.woff2": "/fonts/bootstrap/glyphicons-halflings-regular.woff2",
+    "/fonts/fontawesome-webfont.eot": "/fonts/fontawesome-webfont.eot",
+    "/fonts/fontawesome-webfont.svg": "/fonts/fontawesome-webfont.svg",
+    "/fonts/fontawesome-webfont.ttf": "/fonts/fontawesome-webfont.ttf",
+    "/fonts/fontawesome-webfont.woff": "/fonts/fontawesome-webfont.woff",
+    "/fonts/fontawesome-webfont.woff2": "/fonts/fontawesome-webfont.woff2"
 }

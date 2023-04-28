@@ -15,7 +15,6 @@
     <!-- Fonts & Styles-->
     @section('styles')
         <link href="{{ asset('css/app.css') }}" rel="stylesheet"/>
-        <link href="{{ asset('assets/global/plugins/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet"/>
         <link href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css" rel="stylesheet"/>
     @show
 </head>

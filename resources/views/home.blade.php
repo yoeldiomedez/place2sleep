@@ -90,10 +90,6 @@
 @endsection
 
 @push('scripts')
-    <!-- BEGIN PAGE LEVEL PLUGINS -->
-    <script src="{{ asset('assets/global/plugins/counterup/jquery.waypoints.min.js') }}"></script>
-    <script src="{{ asset('assets/global/plugins/counterup/jquery.counterup.min.js') }}"></script>
-    <!-- END PAGE LEVEL PLUGINS -->
     <script>
         jQuery(document).ready( function( $ ) {
             $('.counter').counterUp({

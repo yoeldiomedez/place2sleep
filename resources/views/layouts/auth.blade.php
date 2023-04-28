@@ -12,11 +12,7 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 Renew Support: http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes
 License: You must have a valid license purchased only from themeforest(the above link) in order to legally use the theme for your project.
 -->
-<!--[if IE 8]> <html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="ie8 no-js"> <![endif]-->
-<!--[if IE 9]> <html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="ie9 no-js"> <![endif]-->
-<!--[if !IE]><!-->
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <!--<![endif]-->
     <!-- BEGIN HEAD -->
     <head>
         <title>{{ config('app.name', 'Laravel') }} | @yield('pagetitle')</title>
@@ -50,12 +46,8 @@ License: You must have a valid license purchased only from themeforest(the above
             
         </div>
         <div class="copyright font-white"> 
-            © {{ date('Y') }} Yoel Diomedez Apps
+            © {{ date('Y') }} {{ config('app.owner', 'Yoel Diomedez Apps') }}
         </div>
-        <!--[if lt IE 9]>
-        <script src="{{ asset('assets/global/plugins/respond.min.js') }}"></script>
-        <script src="{{ asset('assets/global/plugins/excanvas.min.js') }}"></script> 
-        <![endif]-->
         <!-- BEGIN CORE THEME GLOBAL SCRIPTS -->
         <script src="{{ asset('js/auth.js') }}"></script>
         <script>

@@ -1,6 +1,6 @@
 # Place2Sleep
 
-Place 2 Sleep - Sistema para la Administración de Cementerios
+Sistema para la Administración de Cementerios
 
 ## Características
 

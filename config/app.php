@@ -212,5 +212,16 @@ return [
     'aliases' => Facade::defaultAliases()->merge([
         // 'ExampleClass' => App\Example\ExampleClass::class,
     ])->toArray(),
+    
+    /*
+    |--------------------------------------------------------------------------
+    | Application Owner
+    |--------------------------------------------------------------------------
+    |
+    | Here you may specify the owner of the App in order to display it next to
+    | the copyright and current year, in each layout view.
+    |
+    */
 
+    'owner' => env('APP_OWN', 'Yoel Diomedez Apps'),
 ];

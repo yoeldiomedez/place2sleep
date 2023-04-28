@@ -1,11 +1,3 @@
-@section('styles')
-    @parent
-    <!-- BEGIN PAGE LEVEL STYLES -->
-    <link href="{{ asset('assets/global/plugins/datatables/datatables.min.css') }}"  rel="stylesheet">
-    <link href="{{ asset('assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.css') }}" rel="stylesheet">
-    <!-- END PAGE LEVEL SCRIPTS -->
-@endsection
-
 @extends('layouts.app')
 
 @section('pagetitle', 'Pabellones')
@@ -60,11 +52,6 @@
 @endsection
 
 @push('scripts')
-    <!-- BEGIN PAGE LEVEL PLUGINS -->
-    <script src="{{ asset('assets/global/plugins/datatables/datatables.min.js') }}"></script>
-    <script src="{{ asset('assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.js') }}"></script>
-    <script src="{{ asset('assets/global/plugins/datatables/plugins/fnFindCellRowIndexes.js') }}"></script>
-    <!-- END PAGE LEVEL PLUGINS -->
     <script>
     $(document).ready( function () {
         /**************************************************************************/
