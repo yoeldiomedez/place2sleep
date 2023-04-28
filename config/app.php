@@ -185,7 +185,6 @@ return [
         /*
          * Package Service Providers...
          */
-        OwenIt\Auditing\AuditingServiceProvider::class,
         Yajra\DataTables\DataTablesServiceProvider::class,
         Spatie\Permission\PermissionServiceProvider::class,
         /*
