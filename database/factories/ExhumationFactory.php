@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Exhumations>
  */
-class ExhumationsFactory extends Factory
+class ExhumationFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -17,8 +17,9 @@ class ExhumationsFactory extends Factory
     public function definition(): array
     {
         return [
-            'deceased_id'   => fake()->numberBetween($min = 1, $max = 50),
-            'reference_doc' => fake()->numerify('Resolucion N° ###-'.date('Y').'-SBPP-P'),
+            'inhumation_id' => \App\Models\Inhumation::factory(),
+            'ric'           => fake()->numerify('Comprobante N° ###-'.date('Y').'-SBPP-P'),
+            'doc'           => fake()->numerify('Resolucion N° ###-'.date('Y').'-SBPP-P'),
             'notes'         => fake()->text($maxNbChars = 500),
         ];
     }

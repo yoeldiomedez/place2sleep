@@ -16,16 +16,36 @@ class DeceasedFactory extends Factory
      */
     public function definition(): array
     {
+        $gender = fake()->randomElement(['M', 'F']);
+        $name   = ($gender == 'M') ? fake()->firstNameMale() : fake()->firstNameFemale() ;
+
+        $doc_type = fake()->randomElement(['DNI', 'RUC', 'P. NAC.', 'CARNET EXT.', 'PASAPORTE', 'OTRO']);
+        $doc_numb = null;
+
+        switch ($doc_type) {
+            case 'DNI':
+                $doc_numb = fake()->dni();
+                break;
+
+            case 'RUC':
+                $doc_numb = fake()->ruc(fake()->boolean());
+                break;
+
+            default:
+                $doc_numb = fake()->unique()->randomNumber(9);
+                break;
+        }
+
         return [
-            'names'             => fake()->name,
-            'surnames'          => fake()->lastName,
-            'gender'            => fake()->randomElement(['M', 'F']),
+            'names'             => $name,
+            'surnames'          => fake()->lastName(),
+            'gender'            => $gender,
             'marital_status'    => fake()->randomElement(['S', 'C', 'V', 'D']),
-            'document_type'     => fake()->randomElement(['DNI', 'RUC', 'P. NAC.', 'CARNET EXT.', 'PASAPORTE', 'OTRO']),
-            'document_numb'     => fake()->unique()->randomNumber(8),
-            'birth_date'        => fake()->date,
-            'death_date'        => fake()->date,
-            'country_origin'    => fake()->country
+            'document_type'     => $doc_type,
+            'document_numb'     => $doc_numb,
+            'birth_date'        => fake()->date(),
+            'death_date'        => fake()->date(),
+            'country_origin'    => fake()->country(),
         ];
     }
 }

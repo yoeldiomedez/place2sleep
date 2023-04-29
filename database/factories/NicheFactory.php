@@ -2,7 +2,6 @@
 
 namespace Database\Factories;
 
-use App\Models\Pavilion;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -18,8 +17,8 @@ class NicheFactory extends Factory
     public function definition(): array
     {
         return [
-            'pavilion_id' => Pavilion::where('type', 'N')->whereIn('cemetery_id', [1, 2])->inRandomOrder()->first()->id,
-            'row_x'       => strtoupper(fake()->randomLetter),
+            'pavilion_id' => \App\Models\Pavilion::factory(),
+            'row_x'       => strtoupper(fake()->randomLetter()),
             'col_y'       => fake()->numberBetween($min = 1, $max = 99),
             'category'    => fake()->randomElement(['A', 'P', 'O', 'D', 'Z']),
             'state'       => 'D',

@@ -17,9 +17,9 @@ class PavilionFactory extends Factory
     public function definition(): array
     {
         return [
-            'cemetery_id' => fake()->randomElement([1, 2]),
+            'cemetery_id' => \App\Models\Cemetery::factory(),
             'type'        => fake()->randomElement(['N', 'M']),
-            'name'        => fake()->bothify('Pabellon ###')
+            'name'        => fake()->numerify('Pabellon ###'),
         ];
     }
 }
