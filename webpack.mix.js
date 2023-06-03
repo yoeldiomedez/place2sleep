@@ -11,7 +11,7 @@ const mix = require('laravel-mix');
  |
  */
 
- // Default Bootstrap UI
+ // App Layout (Default Bootstrap UI)
  mix.js('resources/js/app.js', 'public/js')
   .sass('resources/sass/app.scss', 'public/css');
 
@@ -36,7 +36,7 @@ mix.styles([
         'resources/assets/global/plugins/backstretch/jquery.backstretch.min.js'
     ], 'public/js/auth.js');
 
-// App Layout
+// Main Layout
 mix.styles([
         'resources/assets/global/plugins/font-awesome/css/font-awesome.min.css',
         'resources/assets/global/plugins/simple-line-icons/css/simple-line-icons.min.css',

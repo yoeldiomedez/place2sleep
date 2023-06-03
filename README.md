@@ -24,8 +24,8 @@ Sistema para la Administración de Cementerios
 
 ## Despliegue
 
-- WSL
-- Docker
+- WSL 2
+- Docker Desktop
 
 ``` bash
 # Enviroment

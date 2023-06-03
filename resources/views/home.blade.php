@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.main')
 
 @section('pagetitle', 'Dashboard')
 @section('pagesubtitle', auth()->user()->cemetery_appellation)

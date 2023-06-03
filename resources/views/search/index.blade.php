@@ -1,4 +1,4 @@
-@extends('layouts.default')
+@extends('layouts.app')
 @section('pagetitle', 'Consultas')
 @section('content')
 <div class="container">

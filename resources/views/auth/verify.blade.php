@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.main')
 
 @section('pagetitle', 'Verification')
 @section('pagesubtitle', 'Verify Your Email Address')
