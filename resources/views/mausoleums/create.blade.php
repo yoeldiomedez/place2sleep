@@ -32,7 +32,7 @@
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label class="bold">Ubicaión</label>
+                                <label class="bold">Ubicación</label>
                                 <input 
                                     type="text" 
                                     name="location" 
